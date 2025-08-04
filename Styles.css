@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  
+}
+
+header {
+  max-width: 1173px;
+  width: 90%;
+  margin: 35px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 20px;
+  color: #1D2975;
+}
+
+.logo span {
+  color: #05057aa4;
+  margin-left: 45px;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: hsl(229, 92%, 14%);
+}
+
+.contact-btn {
+  background: #4e6cf2;
+  color: #fff;
+  padding: 0.2rem 0.3rem;
+  border-radius: 6px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  max-width: 1167px;
+  height: auto;
+  width: 80%;
+  margin-left: 150px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  flex: 1;  
+  font-size: 32px;
+  font-weight: 700;
+  color: #1D2975;
+}
+.hero p h1{
+    margin-left: 20px;
+    margin: auto;
+    
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* sections */
+section {
+  text-align: center;
+  margin: 120px auto;
+  max-width: 1141px;
+  width: 90%;
+
+}
+
+.passion, portfolio, contact{
+    width: 1141px;
+    height:auto;
+}
+
+h2 {
+  font-size: 24px;
+  color: #1D2975;
+}
+
+.cards, .projects, .contact-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.card, .project {
+  width: 250px;
+  background: rgba(243, 238, 238, 0.911);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.contact-icons {
+  justify-content: space-around;
+  flex-wrap:wrap;
+  
+}
+
+.contact-icons a {
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-icons img {
+  max-width: 70px;
+  margin-bottom: 1.2rem;
+}
+
+/* footer */
+footer {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+footer .vector img {
+  width: 100%;
+  display: block;
+}
+
+footer p {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* for desktop */
+@media (max-width: 1024px) {
+  nav {
+    gap: 1rem;
+  } 
+}
+
+/* for mobile */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    z-index: 100;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+
+  .hero-img img {
+    max-width: 250px
+  }
+  
+
+  .cards, .projects, .contact-icons {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
